@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: client
+  namespace: networking-demo
+spec:
+  containers:
+    - name: client
+      image: curlimages/curl:latest
+      command: ["sleep", "3600"]
